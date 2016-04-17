@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'sach:flow-db-admin',
+  name: 'jefflenz:flow-db-admin',
   version: '1.1.5',
   // Brief, one-line summary of the package.
-  summary: 'Meteor Database Admin package for use with Flow Router',
+  summary: 'Meteor Database Admin package for use with Flow Router Forked From sach:flow-db-admin',
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/sachinbhutani/flow-db-admin',
+  git: 'https://github.com/jefflenz/flow-db-admin',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -16,26 +16,26 @@ Package.onUse(function(api) {
   both = ['client','server']
 
   api.use(
-    [
-    'coffeescript',
-    'underscore',
-    'reactive-var',
-    'meteorhacks:unblock@1.1.0',
-    'kadira:flow-router@2.6.2',
-    'kadira:blaze-layout@2.1.0',
-    'zimme:active-route@2.3.2',
-    'reywood:publish-composite@1.4.2',
-    'aldeed:collection2@2.5.0',
-    'aldeed:autoform@5.7.1',
-    'aldeed:template-extension@3.4.3',
-    'alanning:roles@1.2.13',
-    'raix:handlebar-helpers@0.2.5',
-    'momentjs:moment@2.10.6',
-    'aldeed:tabular@1.4.0',
-    'mfactory:admin-lte@0.0.2',
-    'check'
-    ],
-    both);
+      [
+        'coffeescript',
+        'underscore',
+        'reactive-var',
+        'meteorhacks:unblock@1.1.0',
+        'kadira:flow-router@2.11.0',
+        'kadira:blaze-layout@2.3.0',
+        'zimme:active-route@2.3.2',
+        'reywood:publish-composite@1.4.2',
+        'aldeed:collection2@2.9.1',
+        'aldeed:autoform@5.8.1',
+        'aldeed:template-extension@3.4.3',
+        'alanning:roles@1.2.13',
+        'raix:handlebar-helpers@0.2.5',
+        'momentjs:moment@2.10.6',
+        'aldeed:tabular@1.5.5',
+        'mfactory:admin-lte@0.0.2',
+        'check'
+      ],
+      both);
 
   api.use(['less@1.0.0 || 2.5.0','session','jquery','templating'],'client')
 
@@ -47,7 +47,7 @@ Package.onUse(function(api) {
     'lib/both/utils.coffee',
     'lib/both/startup.coffee',
     'lib/both/collections.coffee'
-    ], both);
+  ], both);
 
   api.add_files([
     'lib/client/html/admin_templates.html',
@@ -62,12 +62,12 @@ Package.onUse(function(api) {
     'lib/client/js/slim_scroll.js',
     'lib/client/js/autoForm.coffee',
     'lib/client/css/admin-custom.less'
-    ], 'client');
+  ], 'client');
 
   api.add_files([
     'lib/server/publish.coffee',
     'lib/server/methods.coffee'
-    ], 'server');
+  ], 'server');
 
   //api.addAssets(['lib/client/css/admin-custom.css'],'client');
   api.export('AdminDashboard',both)

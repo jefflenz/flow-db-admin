@@ -1,8 +1,7 @@
 Meteor Flow DB Admin
 ============
-`$ meteor add sach:flow-db-admin`
 
-A fork of yogiben:admin package to work with flow-router instead of iron:router
+A fork of sach:flow-db-admin for customization
 
 A complete admin dashboard solution for meteor built off the [kadira:flow-router](https://github.com/kadirahq/flow-router), [kadira:blaze-layout](https://github.com/kadirahq/blaze-layout), [alanning:roles](https://github.com/alanning/meteor-roles/) and [aldeed:autoform](https://github.com/aldeed/meteor-autoform) packages and frontend from the open source admin dashboard template, [Admin LTE](https://github.com/almasaeed2010/AdminLTE).
 
@@ -25,7 +24,7 @@ This package is designed to work with certain types of projects. Your project sh
 * Fontawesome - e.g. `meteor add fortawesome:fontawesome`
 
 #### 1. Install ####
-Download to your packages directory and run `meteor add sach:flow-db-admin` then go to `/admin` to start
+Download to your packages directory and run `meteor add jefflenz:flow-db-admin` then go to `/admin` to start
 
 #### 2. Config ####
 The simplest possible config with one, 'Posts', collection.
